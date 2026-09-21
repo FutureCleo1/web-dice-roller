@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Five dice roller for Yahtzee">
+
+    <title>Yahtzee Dice Roller</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="rollDice()">
+
+    <main class="container">
+
+        <section class="dice-container">
+
+            <p class="eyebrow">
+                GAME NIGHT
+            </p>
+
+            <h1>
+                Yahtzee Dice Roller
+            </h1>
+
+            <p class="description">
+                Roll five six-sided dice to play Yahtzee.
+                Click the button or press Enter to roll again.
+            </p>
+
+
+            <div class="dice-area">
+
+                <!-- Die 1 -->
+                <div class="die">
+
+                    <label for="die1">
+                        Die 1
+                    </label>
+
+                    <input
+                        type="text"
+                        id="die1"
+                        readonly>
+                </div>
+
+
+                <!-- Die 2 -->
+                <div class="die">
+
+                    <label for="die2">
+                        Die 2
+                    </label>
+
+                    <input
+                        type="text"
+                        id="die2"
+                        readonly>
+                </div>
+
+
+                <!-- Die 3 -->
+                <div class="die">
+
+                    <label for="die3">
+                        Die 3
+                    </label>
+
+                    <input
+                        type="text"
+                        id="die3"
+                        readonly>
+                </div>
+
+
+                <!-- Die 4 -->
+                <div class="die">
+
+                    <label for="die4">
+                        Die 4
+                    </label>
+
+                    <input
+                        type="text"
+                        id="die4"
+                        readonly>
+                </div>
+
+
+                <!-- Die 5 -->
+                <div class="die">
+
+                    <label for="die5">
+                        Die 5
+                    </label>
+
+                    <input
+                        type="text"
+                        id="die5"
+                        readonly>
+                </div>
+
+            </div>
+
+
+            <button
+                id="rollButton"
+                type="button"
+                onclick="rollDice()"
+                autofocus>
+
+                Roll Dice
+
+            </button>
+
+
+            <div class="instructions">
+
+                <h2>
+                    How to Play
+                </h2>
+
+                <p>
+                    Click the "Roll Dice" button to roll five
+                    six-sided dice. You can also press the
+                    Enter key to roll the dice again.
+                </p>
+
+                <p>
+                    Each die produces a random number from
+                    1 through 6.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
